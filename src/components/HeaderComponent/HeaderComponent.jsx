@@ -5,6 +5,7 @@ import Search from 'antd/es/transfer/search';
 import {
   HomeOutlined, SmileOutlined,ShoppingCartOutlined
 } from '@ant-design/icons';
+import ButtonInputSearch from '../ButtonInputSearch/ButtonInputSearch';
 const HeaderComponent = () => {
   return (
     <div>
@@ -15,8 +16,10 @@ const HeaderComponent = () => {
             <WrapperSubHeader>Tốt & Nhanh</WrapperSubHeader>
           </WrapperTextHeader>
         </Col>
-        <Col span={14} style={{ opacity: '0.5' }}>
-          <Search placeholder="Bạn tìm gì hôm nay " enterButton />
+        <Col span={14} style={{ opacity: '1.5' }}>
+        <ButtonInputSearch display='flex'
+        size="large" textButton="Tìm Kiếm"
+        placeholder="Bạn tìm gì hôm nay " />
           <span style={{ marginLeft: '10px' }}>
             <a href="#">Điện gia dụng </a>
             <a href="#"> xe cộ </a>

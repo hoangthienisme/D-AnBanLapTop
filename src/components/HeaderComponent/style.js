@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import {Row} from 'antd'
+import { Button,Input } from 'antd'
 export const WrapperHeader= styled(Row)`
         padding:10px 120px;
         
@@ -29,3 +30,11 @@ export const WrapperHomeHeader=styled.span`
         line-height: 2.5;
         color:blue;
 `
+ export const ButtonInputSearch = ({ size, textButton, placeholder, style }) => {
+        return (
+          <div style={{ display: 'flex', alignItems: 'center', ...style }}>
+            <Input size={size} placeholder={placeholder} style={{ marginRight: '8px' }} />
+            <Button type="primary" size={size}>{textButton}</Button>
+          </div>
+        );
+      };
