@@ -1,6 +1,10 @@
 import React from 'react'
 import TypeProduct from '../../components/TypeProducts/TypeProduct'
 import { WrapperStyleProducts } from './style'
+import slider1 from '../../view/images/silder1.webp'
+import slider2 from '../../view/images/slider2.webp'
+import slider3 from '../../view/images/slider3.webp'
+import SliderComponent from '../../components/SliderComponent/SliderComponent';
 
 const homepage = () => {
   const arr = ['Cam kết ', '100% hàng thật', 'Hoàn 200% nếu hàng giả', '30 ngày đổi trả', 'Giao nhanh 2h', 'Giá siêu rẻ']
@@ -8,15 +12,16 @@ const homepage = () => {
 
     <div style={{ padding: '0 120px' }}>
       <WrapperStyleProducts>
-      {arr.map((item) => {
-        return (
-          <TypeProduct name ={item} key ={item}/>
-        )
-      })}
+        {arr.map((item) => {
+          return (
+            <TypeProduct name={item} key={item} />
+          )
+        })}
       </WrapperStyleProducts>
-
-      HomePageeee
-
+      
+      <SliderComponent  arrImages={[slider1,slider2,slider3]}/>
+     
+       
     </div>
   )
 }

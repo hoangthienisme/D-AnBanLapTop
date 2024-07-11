@@ -12,7 +12,7 @@ const HeaderComponent = () => {
       <WrapperHeader>
         <Col span={4} >
           <WrapperTextHeader>
-            <WrapperMainHeader>TIKI</WrapperMainHeader>
+            <WrapperMainHeader>TAKA</WrapperMainHeader>
             <WrapperSubHeader>Tốt & Nhanh</WrapperSubHeader>
           </WrapperTextHeader>
         </Col>
@@ -20,17 +20,7 @@ const HeaderComponent = () => {
           <ButtonInputSearch display='flex'
             size="large" textButton="Tìm Kiếm"
             placeholder="Bạn tìm gì hôm nay " />
-          {/* <span style={{ marginLeft: '10px'}}>
-            <a href="#">Điện gia dụng </a>
-            <a href="#"> xe cộ </a>
-            <a href="#"> mẹ & bé </a>
-            <a href="#"> khỏe đẹp </a>
-            <a href="#"> nhà cửa </a>
-            <a href="#"> sách </a>
-            <a href="#"> thể thao </a>
-            <a href="#"> máy lọc nước </a>
-            <a href="#"> máy vắt cam </a>
-          </span> */}
+        
         </Col>
         <Col span={6} >
           <WrapperHomeHeader>

@@ -6,9 +6,10 @@ export const WrapperStyleProducts = styled.div`
   gap: 25px;
   justify-content: flex-start;
   font-size: 15px;
-  line-height: 30px;
+  line-height: 44px;
   & > div:not(:last-child)::after {
     content: ' |';
     margin-left: 4px; 
-  }
+    
+  };
 `;
