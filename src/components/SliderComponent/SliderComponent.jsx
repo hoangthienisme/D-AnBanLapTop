@@ -21,6 +21,8 @@ const SliderComponent = ({ arrImages }) => {
                     alt="slider"
                     preview={false}
                     width="100%"
+                    height="300px"
+                    
                 />
             ))}
         </Slider>
