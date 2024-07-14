@@ -32,3 +32,10 @@ export const WrapperButtonMore=styled(ButtonComponent)
     opacity: 1 !important;};
     
 `
+export const WrapperProducts= styled.div`
+display:flex;
+justify-content:center;
+gap: 74px;
+margin-top:20px;
+flex-wrap:wrap;
+`

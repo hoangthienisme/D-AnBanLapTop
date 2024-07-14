@@ -1,5 +1,5 @@
 import React from 'react'
-import { Col, } from 'antd';
+import { Badge, Col, } from 'antd';
 import { WrapperHeader, WrapperHomeHeader, WrapperMainHeader, WrapperSubHeader, WrapperTextHeader,StyledHomeOutlined, StyledSmileOutlined, StyledShoppingCart  } from './style';
 import Search from 'antd/es/transfer/search';
 import {
@@ -31,8 +31,11 @@ const HeaderComponent = () => {
             <span style={{ margin: '12px', gap: '20px' }}>
               <StyledSmileOutlined /> Tài Khoản
             </span>   |
+
             <span style={{ margin: '16px' }}>
+              <Badge count={4} size="small">
               <StyledShoppingCart/>
+              </Badge>
             </span>
 
           </WrapperHomeHeader>

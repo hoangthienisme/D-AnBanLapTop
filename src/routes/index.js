@@ -4,30 +4,51 @@ import OrderPage from "../pages/OrderPage/OrderPage";
 import ProductsPage from "../pages/ProductsPage/ProductsPage";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import TypeProductPage from "../pages/TypeProductPage/TypeProductPage";
- export const routes=[
+import SinginPage from "../pages/SinginPage/SinginPage";
+import SingupPage from "../pages/SingupPage/SingupPage";
+import ProductDetailPage from "../pages/ProductDetailPage/ProductDetailPage";
+export const routes = [
     {
-        path:'/',
-        page:HomePage,
+        path: '/',
+        page: HomePage,
         isShowHeader: true
     },
     {
-        path:'/order',
+        path: '/order',
         page: OrderPage,
         isShowHeader: true
     },
     {
-        path:'/products',
+        path: '/products',
         page: ProductsPage,
         isShowHeader: true
     },
     {
-        path:'/type',
+        path: '/type',
         page: TypeProductPage,
         isShowHeader: true
     },
     {
-        path:'*',
+        path: '*',
         page: NotFoundPage
     }
+    ,
+    {
+        path: '/SingIn',
+        page: SinginPage,
+        isShowHeader: true
+    }
+    ,
+    {
+        path: '/SingUp',
+        page: SingupPage,
+        isShowHeader: true
+    },
+    {
+        path: '/Product-Detail',
+        page: ProductDetailPage,
+        isShowHeader: true
+    }
+   
 ]
 export default routes;
