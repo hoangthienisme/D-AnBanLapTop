@@ -2,9 +2,10 @@ import styled from "styled-components";
 import { Row } from 'antd';
 import { HomeOutlined, ShoppingCartOutlined, SmileOutlined } from '@ant-design/icons';
 export const WrapperHeader = styled(Row)`
-  padding: 4px 15px;
+  padding: 10px 0px;
   background-color: #1890ff;
   border-bottom: 1px solid #d9d9d9;
+  
 `;
 
 export const WrapperTextHeader = styled.div`

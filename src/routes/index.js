@@ -36,13 +36,13 @@ export const routes = [
     {
         path: '/SingIn',
         page: SinginPage,
-        isShowHeader: true
+        isShowHeader: false
     }
     ,
     {
         path: '/SingUp',
         page: SingupPage,
-        isShowHeader: true
+        isShowHeader: false
     },
     {
         path: '/Product-Detail',

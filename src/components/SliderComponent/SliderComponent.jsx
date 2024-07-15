@@ -1,6 +1,10 @@
 import React from 'react';
 import Slider from "react-slick";
 import { Image } from 'antd';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import StyledSlider from './style';
+
 const SliderComponent = ({ arrImages }) => {
     const settings = {
         dots: true,
@@ -13,19 +17,19 @@ const SliderComponent = ({ arrImages }) => {
     };
 
     return (
-        <Slider {...settings}>
+        <StyledSlider {...settings}>
             {arrImages.map((image) => (
-                <Image
-                    key={image} 
-                    src={image}
-                    alt="slider"
-                    preview={false}
-                    width="100%"
-                    height="250px"
-                    
-                />
+                <div key={image}>
+                    <Image
+                        src={image}
+                        alt="slider"
+                        preview={false}
+                        width="100%"
+                        height="250px"
+                    />
+                </div>
             ))}
-        </Slider>
+        </StyledSlider>
     );
 }
 
